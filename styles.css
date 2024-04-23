@@ -1,0 +1,161 @@
+/* Reset CSS */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font face (replace with your actual font paths) */
+@font-face {
+  font-family: 'Logirent';
+  src: url('Assets/Fonts/logirent/ttf/logirent-logirent-bold-700.ttf');
+}
+
+@font-face {
+  font-family: 'Solaris';
+  src: url('Assets/Fonts/Solaris/Solaris.ttf');
+}
+
+/* Body Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #000100;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  word-spacing: 10px;
+}
+
+.container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+#logo {
+  height: 50px; /* Adjust logo height as needed */
+}
+
+nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+h1 {
+  font-family: 'Logirent';
+  font-size: 1.5em; /* Adjust font size as needed */
+  margin-right: 10px;
+}
+
+h2 {
+    font-family: 'Solaris';
+}
+
+h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em; /* Adjust heading sizes as needed */
+  margin-bottom: 10px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  height: 700px; /* Adjust hero section height */
+  background-image: url(Assets/bg/carrier.jpeg); /* Set background color or use a background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 7em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+
+.glow {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+
+    from {
+        text-shadow: 0 0 50px #fff; /* Purple glow */
+    }
+    to {
+        text-shadow: 0 0 100px #fff; /* Increased glow */
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000100; /* Dark footer background */
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #555; /* Darker border */
+}
+
+footer p {
+    font-size: 1.2em;
+}
