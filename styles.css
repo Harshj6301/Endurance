@@ -50,12 +50,12 @@ h3 {
 }
 
 h4 {
-  font-family: 'Quantify';
+  font-family: monospace;
   font-size: 2em;
 }
 
 p {
-  font-family: 'Quantify';
+  font-family: monospace;
   font-size: 1em;
 }
 
@@ -129,7 +129,7 @@ nav a {
   height: 500px; /* Adjust hero section height */
   overflow-x: hidden;
   overflow-y: auto;
-  background-image: url(Assets/bg/carrier.jpeg); /* Set background color or use a background image */
+  background-image: url(Assets/bg/forest.jpeg); /* Set background color or use a background image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
