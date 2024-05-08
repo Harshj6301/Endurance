@@ -1,4 +1,4 @@
-/* Reset CSS */
+/* INDEX PAGE STYLES */
 body,
 h1,
 h2,
@@ -39,16 +39,10 @@ h1 {
 }
 
 h2 {
-    font-family: 'Quantify';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-h3 {
-  font-family: 'Cat';
-  font-size: 2em; /* Adjust heading sizes as needed */
-  margin-bottom: 10px;
-  font-style: normal;
-}
-
+h3,
 h4 {
   font-family: monospace;
   font-size: 2em;
@@ -70,7 +64,7 @@ body {
 /* Header Styles */
 header {
   background-color: #000100;
-  padding: 1rem 1.5rem;
+  padding: 20;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,38 +84,42 @@ header {
 }
 
 #logo {
-  height: 50px; /* Adjust logo height as needed */
+  height: 30px; /* Adjust logo height as needed */
 }
 
-nav {
+/* NAVIGATION BAR MENU */
+
+.navigation-pane {
+  align-items: center;
+  justify-items: right;
+  text-align: right;
+  padding-left: 50%;
+}
+
+.navigation-pane ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-nav li {
+.navigation-pane h1 {
   display: inline-block;
-  margin-right: 20px;
+  margin-left: 20px; /* Adjust margin between menu items */
 }
 
-nav a {
-  color: #fff;
+.navigation-pane a {
   text-decoration: none;
-  font-weight: bold;
+  color: #fff; /* Menu text color */
+  font-weight: bold; /* Menu text bold */
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-  margin-top: 10px;
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust the z-index as needed */
 }
-
-.projects {
-  display: contents;
-  padding-left: 10px;
-}
-
 
 /* Hero Section Styles */
 .hero-section {
@@ -163,21 +161,25 @@ nav a {
 }
 
 .glow {
-    animation: glow 2s infinite alternate;
+  animation: glow 2s infinite alternate;
 }
 
 @keyframes glow {
-
-    from {
-        text-shadow: 0 0 50px #fff; /* Purple glow */
-    }
-    to {
-        text-shadow: 0 0 100px #fff; /* Increased glow */
-    }
+  from {
+    text-shadow: 0 0 50px #fff; /* Purple glow */
+  }
+  to {
+    text-shadow: 0 0 100px #fff; /* Increased glow */
+  }
 }
 
 #projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 50px 0;
+  margin-left: 20px;
 }
 
 .project-container {
@@ -203,17 +205,76 @@ a {
   text-decoration: none;
 }
 
-
+#projects h2{
+  font-family: monospace;
+}
 
 /* Footer Styles */
 footer {
-    background-color: #000100; /* Dark footer background */
-    color: #ddd;
-    text-align: center;
-    padding: 20px;
-    border-top: 3px solid #555; /* Darker border */
+  background-color: #000100; /* Dark footer background */
+  color: #ddd;
+  text-align: center;
+  padding: 20px; /* Increase padding for better spacing */
+  border-top: 3px solid #555; /* Darker border */
 }
 
 footer p {
-    font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px; /* Optional: Add padding for spacing */
+}
+
+/* CONTACT PAGE Styles */
+#contact-form {
+  padding: 50px 0;
+}
+
+#contact-form h2 {
+  font-family: monospace;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  color: #fff;
+  background-color: #000000;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  /* Add purple glowing border effect */
+  box-shadow: 0 0 10px #e6e6e6;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button {
+  background-color: #37373793;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #666;
 }
