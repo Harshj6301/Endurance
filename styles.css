@@ -64,7 +64,7 @@ body {
 /* Header Styles */
 header {
   background-color: #000100;
-  padding: 20;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,6 +72,7 @@ header {
 
 .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   word-spacing: 10px;
 }
@@ -91,9 +92,6 @@ header {
 
 .navigation-pane {
   align-items: center;
-  justify-items: right;
-  text-align: right;
-  padding-left: 50%;
 }
 
 .navigation-pane ul {
@@ -166,11 +164,21 @@ header {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 50px #fff; /* Purple glow */
+    text-shadow: 0 0 10px #fff; /* white glow */
   }
   to {
-    text-shadow: 0 0 100px #fff; /* Increased glow */
+    text-shadow: 0 0 40px #fff; /* Increased glow */
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero-section h1 {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
 }
 
 #projects {
@@ -278,3 +286,6 @@ form button {
 form button:hover {
   background-color: #666;
 }
+
+/* WordPress styles */
+
