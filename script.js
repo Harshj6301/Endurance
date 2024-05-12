@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const heroTitle = document.getElementById('hero-title');
-    const text = "Endurance AI";
+    const text = "Endurance aI";
     let index = 0;
   
     const intervalId = setInterval(function() {
@@ -12,4 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     },90); // Adjust typing speed here (milliseconds)
   });
+  
+
   

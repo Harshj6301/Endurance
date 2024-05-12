@@ -125,7 +125,7 @@ header {
   height: 500px; /* Adjust hero section height */
   overflow-x: hidden;
   overflow-y: auto;
-  background-image: url(Assets/bg/forest.jpeg); /* Set background color or use a background image */
+  background-image: url(Assets/bg/nebula.jpg); /* Set background color or use a background image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -190,6 +190,12 @@ header {
   margin-left: 20px;
 }
 
+#projects h2{
+  font-family: monospace;
+  font-size: 2em;
+  padding-bottom: 1%;
+}
+
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -202,8 +208,12 @@ header {
   text-align: center;
 }
 
+.project p {
+  font-size: 13pt;
+}
+
 .project img {
-  max-width: 100%;
+  max-width: 70%;
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -213,9 +223,6 @@ a {
   text-decoration: none;
 }
 
-#projects h2{
-  font-family: monospace;
-}
 
 /* Footer Styles */
 footer {
